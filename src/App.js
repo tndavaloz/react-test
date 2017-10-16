@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { insertSort } from './Insertion';
+import { divideAndConquer, insertSort } from './Algorithms';
 
 class App extends Component {
   render() {
@@ -39,6 +39,16 @@ class App extends Component {
             <code>
               Array [8,2,7,3,5,1,0]: insertion([8,2,7,3,5,1,0]) =>{' '}
               {insertSort([8, 2, 7, 3, 5, 1, 0])}
+            </code>
+          </h3>
+          <p>
+            The divide and conquer approach is an algorithm that takes an input
+            array, divides it into two separate arrays, and compares the two.
+          </p>
+          <h3>
+            <code>
+              Array [2,4,5,7,1,2,3,6]: divideAndConquer([2,4,5,7,1,2,3,6]) =>{' '}
+              {divideAndConquer([2, 4, 5, 7, 1, 2, 3, 6])}
             </code>
           </h3>
         </div>
