@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { insertSort } from './Insertion';
 
 class App extends Component {
   render() {
@@ -29,6 +30,18 @@ class App extends Component {
             defaultValue={process.env.REACT_APP_SECRET_CODE}
           />
         </form>
+        <div>
+          <p>
+            The insertion sort is an algorithm that loops over an unordered
+            array and returns the sorted array.
+          </p>
+          <h3>
+            <code>
+              Array [8,2,7,3,5,1,0]: insertion([8,2,7,3,5,1,0]) =>{' '}
+              {insertSort([8, 2, 7, 3, 5, 1, 0])}
+            </code>
+          </h3>
+        </div>
       </div>
     );
   }
